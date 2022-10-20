@@ -128,13 +128,21 @@ const weaponsArray = [
 
 // ITERATION 2
 
-function selectRandom() {}
+function selectRandom(arr) {
+   /* const maxArr = arr.length
+    const minArr = 0
+    console.log("que es arr:",arr);
+    console.log("random index:", Math.floor(Math.random() * arr.length)) */
+    return arr[ Math.floor(Math.random() * arr.length)]
+
+}
 
 
 function pickMystery(){
     let suspectRandom = selectRandom(suspectsArray);
     let weaponRandom = selectRandom(weaponsArray);
     let roomRandom = selectRandom(roomsArray);
+    
     
     let crimeScene = {};
     crimeScene.suspect = suspectRandom;
